@@ -25,4 +25,15 @@ addLayer("p", {
         {key: "p", description: "P: Reset for prestige points", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
     layerShown(){return true}
-})
+})// Este código va en el archivo que controla los puntos principales
+// (normalmente se configura en el archivo general del juego)
+
+function getPointGen() {
+    // Empezamos con una base de 1 punto por segundo
+    let gain = new Decimal(1) 
+    
+    // Aquí el juego sumará o multiplicará más adelante 
+    // cuando compres tus Prestige Upgrades
+    
+    return gain
+}
